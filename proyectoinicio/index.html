@@ -4,10 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <style>
+        h1 {
+            color: red;
+            /* PROPIEDAD Y VALOR */
+            background-color: yellow;
+            /* MOSTRAR PROPIEDAD COLORES, VER COMO APARECE TACHADO ES ERRÓNEO */
+        }
+    </style> -->
+    <link rel="preload" href="CSS/style.css">
+    <!-- precarga del archivo PARA QUE CARGUE MÁS RAPIDO, mejorar la experiencia del usuario -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- para enlazar la hoja de estilos con nuestra página 
+    LINK DA INFO DE DONDE TENGO ALOJADA LA HOJA DE ESTILOS Y REL INDICA LA RELACION CON EL DOCUMENTO ACTUAL-->
     <title>Tu Carrera Digital</title>
 </head>
 
 <body>
+
+
+    <!-- <section class="secciónprueba">
+        <h3 class="primerh3"> Primer h3 del ejercicio </h3>
+        <h3 id="segundoh3"> Segundo h3 del ejercicio</h3>
+        <h6> esto es un h6</h6>
+        <p> hola buenos días</p>
+        <img src="/img/Logo-Adecco.png" alt="">
+        <a href="#">enlace 1</a>
+        <a href="#">enlace 2</a>
+        <a href="#">enlace 3</a>
+    </section> -->
+
+
     <header>
 
         <a href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginAlumno.aspx">Login
@@ -25,17 +52,17 @@
         <h1>
             Descubre la formación que te dará la oportunidad de convertirte en un profesional digital
         </h1>
-        <a href="#section">Ver cursos</a>
+        <a href="#section" class="botonvercursos">Ver cursos</a>
         <img src="/img/ico-centro.png" alt="">
     </main>
-    <section>
+    <section class="imagenesArriba">
+        <img src="/img/Logo-Adecco.png" alt="">
         <img src="/img/Logos-oficiales.png" alt="profesional">
-        <img src="/img/Logo-Adecco.png" alt="Adecco">
     </section>
 
     <section>
-        <h3>CURSOS</h3>
-        <H2>CAMBIA TU FUTURO</H2>
+        <h3 class="cursosrosa">CURSOS</h3>
+        <H2 class="futuro">CAMBIA TU FUTURO</H2>
         <h2> MARKETING DIGITAL </h2>
         <a href="https://www.tucarreradigital.es/zona-centro/curso-marketing-digital#cursos">INSCRIBIRME</a>
         <img src="/img/Curso-marketing-digital-centro.png" alt="Marketing">
@@ -54,12 +81,11 @@
         <a href="#">¡PIDENOSLO!</a>
 
         <section>
-        <iframe width=" 560" height="315"
-                src="https://www.youtube.com/embed/SzZlMSDKE8o?si=QRS_1ls7y7c1PxR4" title="YouTube video player"
-                frameborder="0"
+            <iframe width=" 560"height="315"src="https://www.youtube.com/embed/SzZlMSDKE8o?si=QRS_1ls7y7c1PxR4"
+                title="YouTube video player"frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe> 
-                <!-- si no está guardado se utiliza iframe y si está guardado en el ordenador video -->
+                allowfullscreen></iframe>
+            <!-- si no está guardado se utiliza iframe y si está guardado en el ordenador video -->
         </section>
 
         <h3>¿Para quién son estos cursos?</h3>
