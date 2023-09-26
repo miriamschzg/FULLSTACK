@@ -1,3 +1,11 @@
+:root {
+    --colorPrincipal: #f76666;
+    --colorSecundario: #02052f;
+    --tipografía: 'open sans', sans-serif;
+    --estilobotoncursos: 'DinBold', sans-serif; 
+}
+
+
 html {
     font-size: 62.5%;
     /* poner puntos en vez de comas para los porcentajes */
@@ -16,47 +24,109 @@ h1 {
     padding: 35px;
     /* necesita que le demos un atributo antes del color */
     margin-bottom: 10px;
-    font-size: 4.5rem;
+    font-size: 4.7rem;
     font-weight: 800;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--tipografía) ;
     /*porcentaje del ancho de la página */
     line-height: 1.2;
     margin-top: 0;
     margin-left: 30px;
     margin-right: 100px;
-
+    display: block;
 
 }
 
-main {
+.banner {
     background-image: url(/img/11641893944_banner_zona_centro.png);
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    padding-right: 40%;
+}
+.flechainicio{
+    padding-left: 80%;
+}
 
-}
-.cursosrosa{
-    font-size: 1.4rem;
-    color: #F76666;
-    text-align: center;
-}
-.futuro{
-    font: size 2.7rem;
-    text-align: center;
-}
-.botonvercursos{
+
+/* .títuloppal,
+.títulos h2,
+.títulos h3 {
+    color: var(--colorPrincipal);
+} */
+
+
+.botonvercursos {
     color: white;
     background-color: black;
     font-size: 1.4rem;
-    font-family: 'open sans', sans-serif
+    font-family: var(--estilobotoncursos);
+    outline: none;
+    /* para quitar la raya de los enlaces que sale por defecto */
+    text-decoration: none;
+    min-height: 5rem;
+    font-weight: 700;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 94px;
+    padding-right: 94px;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    
 }
+
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--tipografía);
     font-weight: 400;
     color: #02052F;
     font-size: 1.5rem;
-        /* se puede poner varias veces body pero mejor juntarlo para minimizar el código */
+    /* se puede poner varias veces body pero mejor juntarlo para minimizar el código */
 }
-.imagenesArriba{
+
+
+.imagenesArriba {
     text-align: center;
 }
+
+.botoninscribirme{
+    color: var(--colorPrincipal);
+    font-family: var(--estilobotoncursos);
+    font-size: 1.4rem;
+    padding-left: 4.4rem;
+    padding-right: 4.4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: white;
+}
+
+.interesa {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.inscripciones {
+    text-align: left;
+    background-color: var(--colorPrincipal);
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+.inscripciones #contacto{
+    color: white;
+}
+
+.LOCALIZACIONES {
+    background-color: var(--colorSecundario);
+    padding-top: 90px;
+    padding-bottom: 100px;
+    color: white;
+
+}
+
+.LOCALIZACIONES h3,
+h2 {
+    color: white;
+}
+
 /* 
 .h5azul {
     color: white;

@@ -2,22 +2,23 @@
 <html lang="es">
 
 <head>
+   <!-- TIPOGRAFÍA -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <style>
-        h1 {
-            color: red;
-            /* PROPIEDAD Y VALOR */
-            background-color: yellow;
-            /* MOSTRAR PROPIEDAD COLORES, VER COMO APARECE TACHADO ES ERRÓNEO */
-        }
-    </style> -->
+   
+    <link rel="preload" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="preload" href="CSS/style.css">
     <!-- precarga del archivo PARA QUE CARGUE MÁS RAPIDO, mejorar la experiencia del usuario -->
     <link rel="stylesheet" href="CSS/style.css">
     <!-- para enlazar la hoja de estilos con nuestra página 
     LINK DA INFO DE DONDE TENGO ALOJADA LA HOJA DE ESTILOS Y REL INDICA LA RELACION CON EL DOCUMENTO ACTUAL-->
     <title>Tu Carrera Digital</title>
+
 </head>
 
 <body>
@@ -49,35 +50,38 @@
 
     </header>
     <main>
-        <h1>
-            Descubre la formación que te dará la oportunidad de convertirte en un profesional digital
-        </h1>
-        <a href="#section" class="botonvercursos">Ver cursos</a>
-        <img src="/img/ico-centro.png" alt="">
+        <div class="banner">
+            <h1>
+                Descubre la formación que te dará la oportunidad de convertirte en un profesional digital
+            </h1>
+            <a href="#section" class="botonvercursos">Ver cursos</a>
+            <img src="/img/ico-centro.png" alt="" class="flecha inicio">
+        </div>
+    
+
     </main>
     <section class="imagenesArriba">
         <img src="/img/Logo-Adecco.png" alt="">
         <img src="/img/Logos-oficiales.png" alt="profesional">
     </section>
 
-    <section>
-        <h3 class="cursosrosa">CURSOS</h3>
-        <H2 class="futuro">CAMBIA TU FUTURO</H2>
+    <section class="títulos">
+        <h3>CURSOS</h3>
+        <h2>CAMBIA TU FUTURO</h2>
         <h2> MARKETING DIGITAL </h2>
-        <a href="https://www.tucarreradigital.es/zona-centro/curso-marketing-digital#cursos">INSCRIBIRME</a>
+        <a class="botoninscribirme" href="#">INSCRIBIRME</a>
         <img src="/img/Curso-marketing-digital-centro.png" alt="Marketing">
         <h2> PROGRAMACIÓN DE VIDEOJUEGOS, DISEÑO 3D Y REALIDAD VIRTUAL</h2>
-        <a
-            href="https://www.tucarreradigital.es/zona-centro/curso-programacion-de-videojuegos-diseno-3d-y-realidad-virtual#cursos">INSCRIBIRME</a>
+        <a class="botoninscribirme" href="#">INSCRIBIRME</a>
         <img src="/img/Curso-programacion-videojuegos-centro.png" alt="Videojuegos">
         <h2> PROGRAMACIÓN WEB FULL STACK</h2>
-        <a href="https://www.tucarreradigital.es/zona-centro/curso-programacion-web-full-stack#cursos">INSCRIBIRME</a>
+        <a class="botoninscribirme" href="#">INSCRIBIRME</a>
         <img src="/img/Curso-programacion-web-full-stack-centro.png" alt="full stack">
 
     </section>
 
     <section>
-        <h3>¿Te interesa algún otro curso en tu ciudad?</h3>
+        <h3 class="interesa">¿Te interesa algún otro curso en tu ciudad?</h3>
         <a href="#">¡PIDENOSLO!</a>
 
         <section>
@@ -114,7 +118,7 @@
         <a href="https://www.tucarreradigital.es/assets/Infografia-S.G.J.pdf">DESCARGAR INFOGRAFÍA ADJUNTA</a>
     </section>
 
-    <section>
+    <section class="LOCALIZACIONES">
         <h2>LOCALIZACIONES</h2>
         <H3>MADRID</H3>
         <p>CALLE DEL MARQUÉS DE AHUMADA 7 PLANTA BAJA AULA 15 28028, MADRID, MADRID.</p>
@@ -122,9 +126,12 @@
         <P>CALLE HOSPITAL 2 28012, MADRID, MADRID.</P>
     </section>
 
-    <section>
-        <H3>CONTACTAR</H3>
-        <H2>¿TIENES DUDAS? HABLA CON NOSOTROS</H2>
+    <section class="inscripciones">
+        <div>
+            <H3 id="contacto">CONTACTAR</H3>
+            <H2>¿TIENES DUDAS? HABLA CON NOSOTROS</H2>
+        </div>
+
         <img src="/img/ico-TLF.png" alt="">
 
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="50" height="50"
@@ -159,7 +166,7 @@
         <a href="https://www.tucarreradigital.es/zona-centro/aviso-legal">Aviso legal</a>
     </footer>
 
-    <form>
+    <!-- <form>
         <fieldset>
             <legend>Título del formulario</legend>
 
@@ -174,7 +181,7 @@
 
             <input type="submit" value="Enviar ya">
         </fieldset>
-    </form>
+    </form> -->
 
     <a href="#">
         <img src="/img/CTA-informate.png" alt="informate"></a>

@@ -1,0 +1,52 @@
+/* SELECTOR DE ELEMENTO */
+h1 {
+    color: green;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+}
+
+/* SELECTOR DE CLASE */
+.sección2 {
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 5rem;
+}
+
+/* SELECTOR DE ID */
+#sección3 {
+    color: blue;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+}
+
+/* SELECTOR DE ATRIBUTO */
+[src="/img/Logo-Adecco.png"] {
+    margin: 500px;
+}
+
+/* SELECTOR DE CADENA DESCENDIENTE */
+.sección5 h4 {
+    color: #f76666;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* SELECTOR DE TODOS LOS HIJOS QUE MODIFICA SOLO AL PRIMER H5 HIJO DIRECTO Y NO A LOS QUE ESTÁN EN DIV */
+.sección6>h5 {
+    color: yellow;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+}
+
+/* SELECTOR MÚLTIPLE, SI PONEMOS COMA H6 VA A PILLAR TODOS LOS H6 DE LA PAGINA*/
+.seccion7 h3, .seccion7 h6 {
+    color: blueviolet;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+}
