@@ -1,10 +1,10 @@
 /* SELECTOR DE ELEMENTO */
-h1 {
+/* h1 {
     color: green;
     text-transform: uppercase;
     text-align: center;
     font-size: 4rem;
-}
+} */
 
 /* SELECTOR DE CLASE */
 .sección2 {
@@ -29,7 +29,7 @@ h1 {
 
 /* SELECTOR DE CADENA DESCENDIENTE */
 .sección5 h4 {
-    color: #f76666;
+    color: blue;
     text-transform: uppercase;
     text-align: center;
     font-size: 3rem;
@@ -49,4 +49,22 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 2rem;
+}
+
+.seccionAmarillo{
+    background-color: yellow;
+    height: 300px;
+}
+
+.contenedor{
+    max-width: 92%;
+    margin-top:  0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    
+    
+.seccionAzul{
+    background-color: blue;
+    height: 100px; 
 }

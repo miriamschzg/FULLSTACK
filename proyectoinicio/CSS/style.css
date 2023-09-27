@@ -1,8 +1,8 @@
 :root {
     --colorPrincipal: #f76666;
     --colorSecundario: #02052f;
-    --tipografía: 'open sans', sans-serif;
-    --estilobotoncursos: 'DinBold', sans-serif; 
+    --tipografía: 'Open sans', sans-serif;
+    --estilobotoncursos: 'DinBold', sans-serif;
 }
 
 
@@ -16,38 +16,8 @@ body {
     /* ESTO ME PERMITE CONSEGUIR 10PX=1REM */
 }
 
-h1 {
-    color: white;
-    background-color: rgba(248, 102, 102, 0.65);
-    text-align: left;
-    /* está centrado pero solo el texto, no el box model */
-    padding: 35px;
-    /* necesita que le demos un atributo antes del color */
-    margin-bottom: 10px;
-    font-size: 4.7rem;
-    font-weight: 800;
-    font-family: var(--tipografía) ;
-    /*porcentaje del ancho de la página */
-    line-height: 1.2;
-    margin-top: 0;
-    margin-left: 30px;
-    margin-right: 100px;
-    display: block;
 
-}
-
-.banner {
-    background-image: url(/img/11641893944_banner_zona_centro.png);
-    background-size: cover;
-    padding-top: 80px;
-    padding-bottom: 100px;
-    padding-right: 40%;
-}
-.flechainicio{
-    padding-left: 80%;
-}
-
-
+/* PARA APLICAR ESTILOS */
 /* .títuloppal,
 .títulos h2,
 .títulos h3 {
@@ -55,24 +25,15 @@ h1 {
 } */
 
 
-.botonvercursos {
-    color: white;
-    background-color: black;
-    font-size: 1.4rem;
-    font-family: var(--estilobotoncursos);
-    outline: none;
-    /* para quitar la raya de los enlaces que sale por defecto */
-    text-decoration: none;
-    min-height: 5rem;
-    font-weight: 700;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 94px;
-    padding-right: 94px;
-    text-decoration: none;
-    display: inline-block;
-    text-transform: uppercase;
-    
+/* ESTILOS GENÉRICOS */
+.contenedor {
+    max-width: 77%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    /* lo mismo pero más resumido */
+    /* margin: 0 auto */
 }
 
 body {
@@ -84,11 +45,110 @@ body {
 }
 
 
-.imagenesArriba {
-    text-align: center;
+
+/* ESTILOS PARA EL MAIN */
+
+.TítuloPrincipal {
+    color: white;
+    background-color: rgba(248, 102, 102, 0.65);
+    text-align: left;
+    /* está centrado pero solo el texto, no el box model */
+    padding: 35px;
+    /* necesita que le demos un atributo antes del color */
+    font-size: 4.7rem;
+    font-weight: 800px;
+    font-family: var(--tipografía);
+    /*porcentaje del ancho de la página */
+    line-height: 1.2;
+    margin-bottom: 10px;
+    display: block;
 }
 
-.botoninscribirme{
+.banner {
+    background-image: url(/img/11641893944_banner_zona_centro.png);
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 180px;
+    background-position: top left;
+    margin: 0px 0px 32px;
+}
+
+.margenDerecho {
+    margin-right: 37%;
+}
+
+.banner a {
+    color: white;
+    background-color: black;
+    font-size: 1.4rem;
+    font-family: var(--estilobotoncursos);
+    /* para quitar la raya de los enlaces que sale por defecto */
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px solid black;
+    padding: 24px 90px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid black;
+    /* background-image: url(/img/ico-flecha-derecha-white.png) */
+}
+
+.flexMain {
+    display: flex;
+    flex-direction: row;
+    /* por defecto ya es row */
+    justify-content: space-between;
+
+}
+
+/* ESTILOS PARA LAS IMAGENES DE ARRIBA DE CORPORACIONES */
+.imagenesArriba {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-top: -100px;
+    border-radius: 12px;
+    background-color: white;
+    align-items: center;
+
+}
+
+
+/* ESTILOS SECCION CURSOS */
+
+.seccionCursos h3{
+    font-size: 1.7rem;
+    color: var(--colorPrincipal);
+    text-align: center;
+    font-weight: 800;
+    margin: 40px 0px;
+}
+.seccionCursos >h2{
+    font-size: 2.7rem;
+    text-align: center ;
+    margin-bottom: 70px;
+
+}
+.botoneslista a{
+    order: 1px solid;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: none;
+    /* display: flex;
+    flex-direction:
+    justify-content: space-evenly; */
+}
+
+.botonvertodo{
+    background-color: var(--colorPrincipal);
+    color: white;
+}
+
+
+.botoninscribirme {
     color: var(--colorPrincipal);
     font-family: var(--estilobotoncursos);
     font-size: 1.4rem;
@@ -99,10 +159,63 @@ body {
     background-color: white;
 }
 
+
+/* ESTILOS SECCION PIDENOSLO */
+
 .interesa {
     text-align: center;
     font-size: 1.7rem;
 }
+
+.botonpidenoslo {
+    color: white;
+    background-color: var(--colorPrincipal);
+    border-radius: 2rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* ESTILOS SECCION VIDEO */
+
+
+/* ESTILO SECCION PARA QUIEN SON ESTOS CURSOS */
+
+
+.paraquien h3 {
+    color: var(--colorPrincipal);
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 800;
+    
+}
+
+.paraquien h2 {
+    font-size: 2.7rem;
+    color: var(--colorSecundario);
+
+}
+
+/*  ESTILOS LOCALIZACIONES */
+.LOCALIZACIONES {
+    background-color: black;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    color: white;
+}
+
+.LOCALIZACIONES h2 {
+    font-size: 2.7rem;
+    margin: 0 0 5rem;
+    font-weight: 700;
+}
+
+/*  ESTILOS CONTACTAR */
 
 .inscripciones {
     text-align: left;
@@ -110,23 +223,22 @@ body {
     padding-top: 90px;
     padding-bottom: 70px;
 }
-.inscripciones #contacto{
+
+.inscripciones #contacto {
     color: white;
 }
 
-.LOCALIZACIONES {
-    background-color: var(--colorSecundario);
-    padding-top: 90px;
-    padding-bottom: 100px;
-    color: white;
+/* ESTILOS FOOTER */
 
-}
 
-.LOCALIZACIONES h3,
-h2 {
-    color: white;
-}
+/* ESTILOS HEADER */
 
+
+
+
+
+
+/* CLASE 25/09/23 */
 /* 
 .h5azul {
     color: white;
