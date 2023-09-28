@@ -124,27 +124,38 @@ body {
     font-weight: 800;
     margin: 40px 0px;
 }
+
 .seccionCursos >h2{
     font-size: 2.7rem;
     text-align: center ;
     margin-bottom: 70px;
-
+    font-weight: 800;
 }
+
 .botoneslista a{
     order: 1px solid;
-    padding: 10px 24px;
-    font-size: 14px;
+    padding: 12px 24px;
+    font-size: 1.4rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     text-decoration: none;
-    /* display: flex;
-    flex-direction:
-    justify-content: space-evenly; */
+    margin-right: 0.5rem;
+}
+.botoneslista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .botonvertodo{
     background-color: var(--colorPrincipal);
     color: white;
+}
+
+.botonmadrid{
+    background-color: white;
+    border: solid 1px var(--colorPrincipal);
+    color: var(--colorSecundario);
 }
 
 
@@ -157,42 +168,131 @@ body {
     padding-top: 2rem;
     padding-bottom: 2rem;
     background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid white;
+    font-weight: 700;
+    display: inline-block;
+    /* TAMBIEN PUEDE SER .fichas a*/
+}
+.botoninscribirme:hover{
+    background-color: var(--colorPrincipal);
+    color: white;
 }
 
+.fichas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.fichas >div{
+    max-width: 50%;
+    flex: 2;
+    justify-content: space-between;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
+}
+
+.fichas div h2{
+    font-size: 2.7rem;
+    color: white;
+    margin: 0px 0px 90px;
+    /* padding-bottom: 100px; */
+    text-align: left;
+    font-weight: 700;
+}
+
+.fichaMarketing{
+    background-image: url(/img/Curso-marketing-digital-centro.png);
+     margin-right: 15px;
+}
+
+.fichaWeb{
+    background-image: url(/img/Curso-programacion-web-full-stack-centro.png);
+    margin-left: 15px;
+}
 
 /* ESTILOS SECCION PIDENOSLO */
 
-.interesa {
+.pidenoslo {
+    text-transform: uppercase;
     text-align: center;
+    padding: 2rem 1.5rem;
+    /* display: flex;
+    felx-direction: column;
+    align-items: center;
+    align items en la otra direccion */
+}
+
+.pidenoslo h3{
     font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.pidenoslo div{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .botonpidenoslo {
+    /* tambien .pidenoslo a */
     color: white;
     background-color: var(--colorPrincipal);
-    border-radius: 2rem;
+    border-radius: 9.6rem;
+    font-size: 1.6rem;
     margin-top: 2rem;
+    margin-bottom: 7rem;
     padding-top: 2rem;
     padding-right: 4rem;
     padding-bottom: 2rem;
     padding-left: 4rem;
     font-weight: 700;
     text-decoration: none;
-    text-align: center;
+    /* display: inline-block;
+    text-align: center; 
+    TAMBIÉN VALE DE ESTA FORMA */
+}
+
+.botonpidenoslo:hover{
+    background-color: var(--colorSecundario);
+    text-decoration: underline;
+
 }
 
 /* ESTILOS SECCION VIDEO */
+.video{
+    padding: 70px 15px;
 
+}
 
 /* ESTILO SECCION PARA QUIEN SON ESTOS CURSOS */
 
+.paraquien div{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    max-width: 50%;
+    padding: 70px 15px 0px;
+}
+
+.paraquien img{
+    max-width: 100%;
+}
 
 .paraquien h3 {
     color: var(--colorPrincipal);
     text-transform: uppercase;
     font-size: 1.7rem;
     font-weight: 800;
-    
 }
 
 .paraquien h2 {
