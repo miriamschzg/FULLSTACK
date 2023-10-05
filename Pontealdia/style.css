@@ -1,0 +1,286 @@
+/* EJERCICIO DE SELECTOR DE CADENA DESCENDENTE Y DE TODOS LOS HIJOS */
+.selectorCadenaDescendiente h2 {
+    background-color: blue;
+    height: 100px;
+}
+
+.selectorTodosLosHijos>div>div>h2 {
+    background-color: red;
+    height: 100px;
+}
+
+/* EJERCICIO MARGIN Y PADDING */
+
+.seccionMargin h4 {
+    height: 200px;
+    background-color: yellow;
+    margin: 50px;
+}
+
+.seccionPadding h4 {
+    height: 200px;
+    background-color: yellow;
+    padding: 100px;
+    margin: 0;
+}
+
+/* DISPLAY BLOCK E INLINE */
+.displayBlockInline >p{
+    background-color: aqua;
+}
+
+.displayBlockInline a{
+    background-color: red;
+}
+
+.displayBlockInline h1{
+    background-color: blue;
+}
+
+.displayBlockInline h3{
+    background-color:bisque;
+}
+
+.displayBlockInline h6{
+    background-color: orange;
+}
+
+.displayBlockInline div{
+    background-color: cornflowerblue;
+}
+
+
+/* CAMBIO DE NATURALEZA MISMA SECCIÓN */
+
+.modificado p, .modificado h1, .modificado h3, .modificado h6, .modificado div{
+    display: inline;
+}
+
+.modificado a{
+    display: block;
+}
+.modificado >p{
+    background-color: aqua;
+}
+
+.modificado a{
+    background-color: red;
+}
+
+.modificado h1{
+    background-color: blue;
+}
+
+.modificado h3{
+    background-color:bisque;
+}
+
+.modificado h6{
+    background-color: orange;
+}
+
+.modificado div{
+    background-color: cornflowerblue;
+}
+
+.secciónRow{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: end;
+}
+
+.secciónColumn{
+   display: flex;
+    width: 300px;
+    height: 300px;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: end;
+    background-color: blue;
+}
+
+
+
+
+
+/* <!-- EJERCICIOS REPASO FLEX -->
+<!-- UNA SECCION CON 3 DIV EN FILA 20% 30% 50% CON P CADA UNO --> */
+.ejemplo1 {
+    display: flex;
+    flex-direction: row;
+}
+.ejemplo1 div{
+    border: solid black 1px;
+    text-align: center;
+}
+.contenedor20{
+    width: 20%;
+    background-color: yellow;
+}
+.contenedor30{
+    width: 30%;
+    background-color: blueviolet;
+}
+.contenedor50{
+    width: 50%;
+    background-color: blue;
+}
+
+/* EJERCICIO 2 FLEX */
+.ejemplo2{
+    display: flex;
+    flex-direction: column;
+}
+
+.bloque1{
+    height: 100px;
+    background-color: lightcoral;
+}
+
+.bloque2{
+    height: 200px;
+    background-color: blueviolet;
+}
+
+/* EJERCICIO 3 FLEX */
+.ejemplo3{
+    display: flex;
+    flex-direction: row;
+}
+
+.ejemplo3 div{
+    flex: 1;
+    display: flex;
+    border: solid black 2px;
+}
+
+.contenedor40{
+    max-width: 40%;
+}
+.contenedor60{
+    max-width: 60%;
+}
+
+.parrafo1{
+    max-width: 30%;
+    flex: 1;
+    background-color: lightblue;
+}
+
+.parrafo2{
+    max-width: 70%;
+    flex: 1;
+    background-color: bisque;
+}
+
+/* EJERCICO RESPONSIVE DESIGN */
+@media (min-width: 1131px){
+    .responsive{
+        background-color: brown;
+        height: 500px;
+    }
+}
+@media  (max-width: 1131px) and (min-width: 933px){
+    .responsive{
+        background-color: yellow;
+        height: 500px;
+    }
+}
+@media  (max-width: 933px) and (min-width: 616px){
+    .responsive{
+        background-color:  blue;
+        height: 500px;
+    }
+}
+@media  (max-width: 616px) and (min-width: 360px){
+    .responsive{
+        background-color: red;
+        height: 500px;
+    }
+}
+@media  (max-width: 360px) and (min-width: 0px){
+    .responsive{
+        background-color: green;
+        height: 500px;
+    }
+}
+
+/* EJERCICIO ABSOLUTE Y RELATIVE */
+/* SECCION ABSOLUTA CON 500PX Y DIV ABSOLUTE CON 10PX */
+.ejercicioAR{
+    height: 500px;
+    background-color: blue;
+    position: relative;
+}
+
+.ejercicioAR>div{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    top: 200px;
+box-shadow: 10px 9px 0px 0px rgba(0,0,0,0.75);
+}
+
+.gradiente{
+    background: rgba(255,235,252,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,235,252,1) 0%, rgba(255,163,214,1) 56%, rgba(255,133,196,1) 76%, rgba(255,122,195,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,235,252,1)), color-stop(56%, rgba(255,163,214,1)), color-stop(76%, rgba(255,133,196,1)), color-stop(100%, rgba(255,122,195,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,235,252,1) 0%, rgba(255,163,214,1) 56%, rgba(255,133,196,1) 76%, rgba(255,122,195,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255,235,252,1) 0%, rgba(255,163,214,1) 56%, rgba(255,133,196,1) 76%, rgba(255,122,195,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255,235,252,1) 0%, rgba(255,163,214,1) 56%, rgba(255,133,196,1) 76%, rgba(255,122,195,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(255,235,252,1) 0%, rgba(255,163,214,1) 56%, rgba(255,133,196,1) 76%, rgba(255,122,195,1) 100%);
+   
+    height: 500px;
+    -webkit-box-shadow: 10px 9px 0px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 9px 0px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 9px 0px 0px rgba(0,0,0,0.75);
+}
+
+/* EJERCICIO GRID */
+.ejercicioGrid div{
+    border: 1px solid black;
+}
+.ejercicioGrid {
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 200px 100px;
+}
+
+.ejercicioGrid2 div{
+    border: 1px solid black;
+}
+.ejercicioGrid2 {
+    display: grid;
+    grid-template-columns: 80% 100px;
+    grid-template-rows: 50px 300px 100px 200px;
+    justify-content: center;
+}
+
+.ejercicioGrid3 div{
+    border: 1px solid black;
+}
+
+.ejercicioGrid3{
+    display: grid;
+    grid-template-columns: 100fr 300fr 200fr 150fr;
+    grid-template-rows: 5fr 15fr 16fr 7fr;
+    height: 300px;
+}
+
+.ejercicioRepeat div{
+    border: solid black 1px
+}
+
+.ejercicioRepeat{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    height: 300px;
+    grid: 2fr 2fr/1fr 1fr
+}

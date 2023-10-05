@@ -17,6 +17,7 @@ body {
 }
 
 
+
 /* PARA APLICAR ESTILOS */
 /* .títuloppal,
 .títulos h2,
@@ -26,15 +27,38 @@ body {
 
 
 /* ESTILOS GENÉRICOS */
-.contenedor {
-    max-width: 77%;
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto;
-    /* lo mismo pero más resumido */
-    /* margin: 0 auto */
+
+@media (min-width:1140px) {
+    .contenedor {
+        max-width: 77%;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+    }
 }
+
+@media (max-width:1140px) and (min-width:768px) {
+    .contenedor{
+        max-width: 80%;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+    }
+}
+
+@media (max-width:768px){
+    .contenedor{
+            max-width: 90%;
+            margin-top: 0;
+            margin-right: auto;
+            margin-bottom: 0;
+            margin-left: auto;
+        }
+}
+   
+
 
 body {
     font-family: var(--tipografía);
@@ -47,6 +71,17 @@ body {
 
 
 /* ESTILOS PARA EL MAIN */
+
+.margenDerecho {
+    margin-right: 37%;
+}
+
+
+@media (max-width:1140px){
+    .margenDerecho {
+        margin-right: 0;
+    }
+}
 
 .TítuloPrincipal {
     color: white;
@@ -73,9 +108,6 @@ body {
     margin: 0px 0px 32px;
 }
 
-.margenDerecho {
-    margin-right: 37%;
-}
 
 .banner a {
     color: white;
@@ -93,12 +125,27 @@ body {
     /* background-image: url(/img/ico-flecha-derecha-white.png) */
 }
 
+.banner a:hover{
+    border: 2px solid var(--colorPrincipal);
+    color: var(--colorPrincipal);
+    background-color: white;
+}
+
+@media (max-width:768px){
+    .banner a{
+        padding: 24px 80px;
+    }
+}
+
 .flexMain {
     display: flex;
     flex-direction: row;
     /* por defecto ya es row */
     justify-content: space-between;
+}
 
+.flexMain img {
+    margin-right: 10px;
 }
 
 /* ESTILOS PARA LAS IMAGENES DE ARRIBA DE CORPORACIONES */
@@ -111,13 +158,33 @@ body {
     border-radius: 12px;
     background-color: white;
     align-items: center;
-
+}
+@media (min-width:768px) and (max-width:1140px){
+    .imagenesArriba{
+        padding: 20px 10px;
+    }
+    [src="/img/Logos-oficiales.png"]{
+        max-width: 70%;
+    }
+    [src="/img/Logo-Adecco.png"]{
+        max-width:20%
+    }
 }
 
-
+@media (max-width:768px){
+    .imagenesArriba{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagenesArriba img{
+        max-width: 100%;
+        padding: 20px;
+    }
+}
 /* ESTILOS SECCION CURSOS */
 
-.seccionCursos h3{
+.seccionCursos h3 {
     font-size: 1.7rem;
     color: var(--colorPrincipal);
     text-align: center;
@@ -125,14 +192,14 @@ body {
     margin: 40px 0px;
 }
 
-.seccionCursos >h2{
+.seccionCursos>h2 {
     font-size: 2.7rem;
-    text-align: center ;
+    text-align: center;
     margin-bottom: 70px;
     font-weight: 800;
 }
 
-.botoneslista a{
+.botoneslista a {
     order: 1px solid;
     padding: 12px 24px;
     font-size: 1.4rem;
@@ -141,18 +208,19 @@ body {
     text-decoration: none;
     margin-right: 0.5rem;
 }
-.botoneslista{
+
+.botoneslista {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.botonvertodo{
+.botonvertodo {
     background-color: var(--colorPrincipal);
     color: white;
 }
 
-.botonmadrid{
+.botonmadrid {
     background-color: white;
     border: solid 1px var(--colorPrincipal);
     color: var(--colorSecundario);
@@ -175,19 +243,29 @@ body {
     display: inline-block;
     /* TAMBIEN PUEDE SER .fichas a*/
 }
-.botoninscribirme:hover{
+
+.botoninscribirme:hover {
     background-color: var(--colorPrincipal);
     color: white;
 }
 
-.fichas{
+.fichas {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 100px;
 }
 
-.fichas >div{
+
+@media (max-width:768px){
+    .fichas{
+        flex-direction: column;
+        max-height: 100%; 
+    }
+
+}
+
+.fichas>div {
     max-width: 50%;
     flex: 2;
     justify-content: space-between;
@@ -200,7 +278,23 @@ body {
     min-height: 220px;
 }
 
-.fichas div h2{
+@media (max-width:768px){
+
+    .fichas>div{ 
+    margin: 15px 0px;
+    max-width: 100%;
+    padding: 30px;
+}
+}
+
+@media (min-width:768px) and (max-width:1140px){
+    .fichas>div{
+        padding: 30px 30px;
+    }
+}
+
+
+.fichas div h2 {
     font-size: 2.7rem;
     color: white;
     margin: 0px 0px 90px;
@@ -209,12 +303,12 @@ body {
     font-weight: 700;
 }
 
-.fichaMarketing{
+.fichaMarketing {
     background-image: url(/img/Curso-marketing-digital-centro.png);
-     margin-right: 15px;
+    margin-right: 15px;
 }
 
-.fichaWeb{
+.fichaWeb {
     background-image: url(/img/Curso-programacion-web-full-stack-centro.png);
     margin-left: 15px;
 }
@@ -231,12 +325,12 @@ body {
     align items en la otra direccion */
 }
 
-.pidenoslo h3{
+.pidenoslo h3 {
     font-size: 1.7rem;
     font-weight: bold;
 }
 
-.pidenoslo div{
+.pidenoslo div {
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -262,30 +356,93 @@ body {
     TAMBIÉN VALE DE ESTA FORMA */
 }
 
-.botonpidenoslo:hover{
+.botonpidenoslo:hover {
     background-color: var(--colorSecundario);
     text-decoration: underline;
 
 }
 
 /* ESTILOS SECCION VIDEO */
-.video{
-    padding: 70px 15px;
+.video {
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+}
 
+@media (max-width:1140px) {
+    .video iframe{
+        height: 360px;
+        width: 100%;
+    }
+}
+@media (max-width:768px) {
+    .video iframe{
+        height: 200px;
+        width: 100%;
+    }
 }
 
 /* ESTILO SECCION PARA QUIEN SON ESTOS CURSOS */
 
-.paraquien div{
+.paraquien {
     display: flex;
-    flex-direction: column;
-    flex: 2;
-    max-width: 50%;
-    padding: 70px 15px 0px;
+    flex-direction: row;
+
 }
 
-.paraquien img{
-    max-width: 100%;
+@media (max-width:1140px){
+    .paraquien{
+        flex-direction: column;
+    }
+}
+
+.paraquien>div {
+    margin: 50px 0px;
+    flex: 1;
+    max-width: 50%;
+}
+
+@media (max-width:1140px){
+    .paraquien>div{
+        max-width: 100%;
+    }
+}
+
+.columnatexto>p {
+    line-height: 1.4;
+    margin-bottom: 2.5rem;
+}
+
+.columnatexto {
+    padding-right: 15px;
+}
+
+
+.paraquien div>h4 {
+    font-size: 1.5rem;
+}
+
+.paraquien div>a {
+    color: var(--colorPrincipal);
+    margin-bottom: 5rem;
+}
+
+.infografía {
+    margin-top: 5rem;
+}
+
+.paraquien div>div>a {
+    background-color: var(--colorPrincipal);
+    color: white;
+    padding: 2rem 4rem;
+    display: inline-block;
+    border: solid 2px var(--colorPrincipal);
+    text-decoration: none;
+}
+
+.paraquien div>div>a:hover {
+    background-color: white;
+    color: var(--colorPrincipal);
 }
 
 .paraquien h3 {
@@ -295,11 +452,86 @@ body {
     font-weight: 800;
 }
 
-.paraquien h2 {
+.paraquien>div>b {
     font-size: 2.7rem;
     color: var(--colorSecundario);
+    font-weight: bold;
+}
+
+.columna2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-top: 60px;
 
 }
+
+@media (max-width:768px){
+    .columna2{
+    padding-top: 0px;
+    }
+}
+
+
+@media (max-width:1140px){
+    .columna2{
+        padding: 0px 0px 0px 30px;
+    }
+}
+
+.cuadroSuperior {
+    background-color: var(--colorPrincipal);
+    padding: 70px 30px;
+    margin: 0;
+}
+
+.cuadroSuperior p {
+    font-size: 2.5rem;
+    color: var(--colorSecundario);
+    font-weight: bold;
+    margin: 1rem;
+
+}
+
+.cuadroSuperior span {
+    color: white;
+}
+
+.cuadroInferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    
+}
+@media (max-width:768px){
+    .cuadroInferior {
+        align-items: start;
+    }
+}
+
+.cuadroInferior h4 {
+    font-size: 1.6rem !important;
+    padding: 40px 40px;
+    margin: -45px 25px 0px 30px;
+    line-height: 1.4;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.cuadroInferior span {
+    color: var(--colorPrincipal);
+}
+
+
+.cuadroInferior img {
+    max-width: 40%;
+    max-height: 40%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
 
 /*  ESTILOS LOCALIZACIONES */
 .LOCALIZACIONES {
@@ -315,6 +547,45 @@ body {
     font-weight: 700;
 }
 
+.LOCALIZACIONES h3 {
+    font-size: 1.7rem;
+    margin: 0 0 0rem;
+    font-weight: 700;
+}
+
+.LOCALIZACIONES p {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.dirección {
+    display: grid;
+    grid:1fr/repeat(4,1fr);
+}
+
+/* .dirección{
+    display: flex;
+} */
+
+/* .dirección div {
+    flex: 1;
+    max-width: 25%;
+    padding: 25px 0px
+} */
+
+@media (max-width:1140px){
+    .dirección div {
+        flex: 1;
+        max-width: 50%;
+        padding: 25px 0px
+    }
+}
+
+.madrid2 {
+    margin-left: 25px;
+}
+
 /*  ESTILOS CONTACTAR */
 
 .inscripciones {
@@ -324,18 +595,207 @@ body {
     padding-bottom: 70px;
 }
 
-.inscripciones #contacto {
+.textoInscripciones h3 {
     color: white;
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin: 0 0 22px;
 }
+
+.textoInscripciones h2 {
+    color: white;
+    font-size: 2.7rem;
+    font-weight: 800;
+    padding: 0 0 15px;
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+}
+
+.contacto>div {
+    flex: 1;
+    max-width: 50%;
+    padding: 40px 40px 40px 40px;
+    background-color: white !important;
+    border-radius: 0.5rem;
+    align-items: center;
+}
+
+@media (max-width:1140px){
+    .contacto{
+        flex-direction: column;
+    }
+    .contacto>div{
+        max-width: 100%;
+        margin: 10px 0;
+        padding-left: 30px;
+    }
+}
+
+.card {
+    margin-left: 80px;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.card a {
+    font-size: 1.4rem;
+    color: var(--colorPrincipal);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.llamanos {
+    margin-right: 15px;
+    display: flex;
+}
+
+.contacto img {
+    position: absolute;
+    max-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:1140px){
+    .contacto img{
+        max-height: 50px;
+    }
+}    
+
+.email {
+    margin-left: 15px;
+    display: flex;
+}
+
 
 /* ESTILOS FOOTER */
 
+footer {
+    background-color: #f3f3f5;
+    padding: 50px 0 40px;
+}
+
+footer a{
+    color: var(--colorSecundario);
+}
+
+.seccionfooter{
+    display: flex;
+    flex-direction: column;
+}
+.menuFooter {
+    display: flex;
+    padding: 0 0 22px 0;
+    margin: 0 50px 0 0;
+}
+
+
+.Nosotros h3 {
+    margin-left: 80px;
+
+}
+
+.enlacesFooter {
+    display: flex;
+    border-top: 1px solid #194584;
+    border-bottom: 1px solid #194584;
+    padding: 20px 0;
+    margin: 0 -15px;
+}
+
+.enlacesFooter a {
+    margin: 0 55px 0 15px;
+}
 
 /* ESTILOS HEADER */
 
+.headerTodo {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+}
+
+.login{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    color: var(--colorPrincipal);
+}
+
+.login a{
+    color: var(--colorPrincipal);
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+
+.login a:hover{
+    text-decoration: underline;
+}
+
+.login>p{
+    margin: 0px 15px !important;
+    font-size: 1.7rem;
+    font-weight: 100;
+}
 
 
 
+.seccion2header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+ 
+@media (max-width:768px) {
+    .seccion2header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .login{
+        margin-bottom: 20px;
+    }
+}
+
+.enlacesheader2 a{
+    color: var(--colorSecundario);
+    font-size: 1.4rem;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.enlacesheader2{
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+
+.enlacesheader2 a:hover{
+    text-decoration: underline; 
+}
+
+.seccion2header .botonheader {
+    padding: 10px 12px;
+    background-color: var(--colorPrincipal);
+    color: white;
+    border-radius: 2rem;
+}
+
+ .botonheader:hover{
+    text-decoration: none !important;
+    background-color: #194584;
+}
+
+.flechaArriba 
 
 
 /* CLASE 25/09/23 */
@@ -396,4 +856,4 @@ body {
 /* #segundoh3,
 [src="/img/Logo-Adecco.png"] {
     background-color: beige;
-} */
+}
