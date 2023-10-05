@@ -559,20 +559,20 @@ body {
     line-height: 1.5;
 }
 
-.dirección {
+/* .dirección {
     display: grid;
     grid:1fr/repeat(4,1fr);
-}
-
-/* .dirección{
-    display: flex;
 } */
 
-/* .dirección div {
+.dirección{
+    display: flex;
+}
+
+.dirección div {
     flex: 1;
     max-width: 25%;
     padding: 25px 0px
-} */
+}
 
 @media (max-width:1140px){
     .dirección div {
@@ -709,10 +709,19 @@ footer a{
     border-bottom: 1px solid #194584;
     padding: 20px 0;
     margin: 0 -15px;
+    max-width: 100%;
 }
 
 .enlacesFooter a {
     margin: 0 55px 0 15px;
+}
+@media (max-width: 768px){
+    .enlacesFooter{
+        max-width: 100%;
+    }
+    .enlacesFooter a {
+        margin: 0 5px 0 15px
+    }
 }
 
 /* ESTILOS HEADER */
