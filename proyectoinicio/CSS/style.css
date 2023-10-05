@@ -707,9 +707,10 @@ footer a{
     display: flex;
     border-top: 1px solid #194584;
     border-bottom: 1px solid #194584;
-    padding: 20px 0;
-    margin: 0 -15px;
+    padding: 20px 15px;
+    /* margin: 0 -15px 0 -15px; */
     max-width: 100%;
+    justify-content: space-between;
 }
 
 .enlacesFooter a {
@@ -717,10 +718,13 @@ footer a{
 }
 @media (max-width: 768px){
     .enlacesFooter{
-        max-width: 100%;
     }
-    .enlacesFooter a {
-        margin: 0 5px 0 15px
+    .enlacesFooter>a {
+        margin: 0 5px 0px
+    }
+    .menuFooter{
+        justify-content: center;
+        margin: 0px 20px;
     }
 }
 
