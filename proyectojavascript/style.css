@@ -1,0 +1,30 @@
+
+
+/* .seccionPrincipal{
+    background-image: url("../proyectoinicio/img/11641893944_banner_zona_centro.png");
+} */
+
+.enlace{
+    text-decoration: none;
+    color: orange;
+}
+
+body{
+    height: 1000px;
+}
+
+.estiloEnlaces{
+    display: flex;
+}
+.estiloEnlaces a{
+    margin-right: 3rem;
+}
+
+.fichas{
+    background-color: beige;
+    border-radius: 1rem;
+}
+
+.ficha2{
+    background-color: blueviolet;
+}

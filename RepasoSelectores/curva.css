@@ -1,0 +1,15 @@
+.text-container {
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+    border-radius: 50%; /* Crea una forma circular */
+    padding: 20px;
+}
+
+.curved-text {
+    shape-outside: ellipse(50% 50% at 50% 50%); /* Crea una forma elíptica que coincide con el contenedor circular */
+    width: 100%; /* Ajusta el ancho para que el texto siga la forma elíptica */
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+}

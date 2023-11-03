@@ -100,7 +100,7 @@ body {
 }
 
 .banner {
-    background-image: url(/img/11641893944_banner_zona_centro.png);
+    background-image: url(/proyectoinicio/img/11641893944_banner_zona_centro.png);
     background-size: cover;
     padding-top: 80px;
     padding-bottom: 180px;
@@ -304,12 +304,12 @@ body {
 }
 
 .fichaMarketing {
-    background-image: url(/img/Curso-marketing-digital-centro.png);
+    background-image: url(/proyectoinicio/img/Curso-marketing-digital-centro.png);
     margin-right: 15px;
 }
 
 .fichaWeb {
-    background-image: url(/img/Curso-programacion-web-full-stack-centro.png);
+    background-image: url(/proyectoinicio/img/Curso-programacion-web-full-stack-centro.png);
     margin-left: 15px;
 }
 
@@ -720,7 +720,7 @@ footer a{
     .enlacesFooter{
     }
     .enlacesFooter>a {
-        margin: 0 5px 0px
+        margin: 0 10px 0px
     }
     .menuFooter{
         justify-content: center;
@@ -758,7 +758,6 @@ footer a{
     font-size: 1.7rem;
     font-weight: 100;
 }
-
 
 
 .seccion2header {
