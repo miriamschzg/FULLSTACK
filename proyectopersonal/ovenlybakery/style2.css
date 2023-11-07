@@ -22,6 +22,7 @@ body {
     font-size: 20px;
     font-family: var(--tipografíaBody);
     color: white;
+    background-color: var(--colorFondo);
 }
 
 
@@ -63,6 +64,16 @@ body {
     font-size: 1.6rem;
     font-weight: 200;
 }
+.textoGen{
+    padding-top: 7rem;
+}
+
+.fijar{
+    position: fixed;
+}
+.fijar p{
+    color: #000000;
+}
 
 .textoH3{
     color: var(--colorTostado);
@@ -70,7 +81,6 @@ body {
     font-size: 3rem;
     font-weight: 300;
     text-decoration: underline;
-    margin-top: 0;
 }
 
 .last{
@@ -135,19 +145,8 @@ body {
 
 
 @media(max-width:768px) {
-    .logo img {
-        width: 70%;
-    }
-}
-@media(min-width:768px) and (max-width:1140px) {
-    .logo img {
-        width: 50%;
-    }
-}
-@media(max-width:768px) {
-    .logo img {
-        width: 70%;
-        padding: 1rem;
+    .logo {
+        width: 40%;
     }
 
     .enlacesHeader {
@@ -157,18 +156,21 @@ body {
 
     }
 }
-
-@media(min-width:1140px) {
-    .logo img {
-        width: 100%;
+@media(min-width:768px) and (max-width:1140px) {
+    .logo {
+        width: 30%;
     }
 }
+.logo img {
+    width: 100%;
+ }
+
 
 
 @media(min-width:1140px) {
     .enlacesHeader {
         display: flex;
-        width: 100%;
+        width: 87%;
         justify-content: space-between;
         align-items: center;
 
@@ -222,14 +224,14 @@ body {
         position: absolute;
         list-style: none;
         padding: 0 20px;
-        width: 100%;
+        width: 30vw;
         background-color: #fff;
         border: 1px solid #ccc;
         /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
     }
 
     .dropdown-menu li {
-        padding: 10px;
+        padding: 20px;
         text-align: center;
     }
 
@@ -238,7 +240,9 @@ body {
         color: black;
         font-family: var(--tipografíaBody);
     }  
-
+    .headerTodo .menu-container ul li {
+        width: 100%;
+    }
     #toggle-menu {
         color: black;
         background-color: white;
@@ -274,7 +278,8 @@ main {
 
 @media (max-width:1140px) {
     main {
-        background-image: url(/proyectopersonal/imgOvenlyBakery/pexels-marta-dzedyshko-7693958.jpg);
+        /* background-image: url(/proyectopersonal/imgOvenlyBakery/pexels-marta-dzedyshko-7693958.jpg); */
+        background-image: url(/proyectopersonal/imgOvenlyBakery/IMG_6099.jpg);
         background-repeat: no-repeat;
         background-position: right top;
     }
@@ -939,6 +944,10 @@ td {
     margin-bottom: 12rem;
 }
 
+.tuned a:hover {
+    transform: scale(1.05);
+}
+
 @media(max-width:768px) {
     .tuned a {
         font-size: 3rem;
@@ -946,11 +955,227 @@ td {
     }
 }
 
-/*  */
+/* ABOUT US */
+
+.ourStory{
+    display: flex;
+    background-color: var(--colorTostado);
+    padding-top: 10rem;
+}
+.ourStory div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ourStory img{
+    width: 100%;
+}
+.cropped-image{
+    height: 800px;
+    object-fit: cover;
+}
+.ourStory p{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-family: var(--tipografíaBody);
+    color: white;
+    /* margin-top: 25rem; */
+
+}
+.ourStory h5{
+    font-size: 4rem;
+    font-family: var(--tipografíaLogo);
+    font-weight: 200;
+    margin:2rem 0;
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    .ourStory{
+        flex-direction: column;
+    }
+    .ourStory img{
+        max-height: 60rem;
+    }
+    .ourStory div{
+        width: 100%;
+    }
+    .cropped-image {
+        width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+        height: 300px; /* Establece la altura deseada para la imagen en dispositivos móviles */
+        object-fit: cover; /* Recorta la imagen para que se ajuste a la altura y ancho definidos */
+    }
+    .ourStory p{
+        margin-top: 10rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+        text-align: left;
+    }
+    .ourStory h5{
+        font-size: 4rem;
+        font-family: var(--tipografíaLogo);
+        font-weight: 200;
+        margin:2rem 0;
+        text-align: center;
+    }
+}
+.rounded{
+    border-radius: 50px;
+}
+.foundedDIV{
+    display: flex;
+    flex-direction: row;
+    margin: 4rem 0;
+    max-width: 100%;
+}
+.foundedDIV div{
+    width: 50%;
+}
+@media(max-width:768px) {
+    .foundedDIV{
+        flex-direction: column;
+        align-items: center;
+    }
+    .foundedDIV div{
+        width: 100%;
+    }
+    .foundedDIV img{
+        max-width: 100%;
+    }
+}
+.foundedDIV img, .founded3 img{
+    width: 500px;
+    height:650px;
+    object-fit: cover;
+}
+.founded3{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Añadir esta línea para centrar verticalmente */
+    height: 100%
+}
+.founded3 img{
+    max-width: 50%;
+}
+
+@media(max-width:768px) {
+    .founded3 img{
+        max-width: 80%;
+    }
+}
+.foundedDIV h3{
+    color: var(--colorTostado);
+    font-weight: 400;
+    padding: 3rem 0;
+}
+
+.believe{
+    background-color: var(--colorTostado);
+    padding: 3rem 0;
+    text-align: center;
+}
+.belifs{
+    display: flex;
+    flex-direction: row;
+    color: var(--colorFondo);
+}
+
+.belifs>div{
+    justify-content: space-between;
+    margin: 0 2rem
+}
+@media(max-width:768px) {
+    .belifs{
+        flex-direction: column;
+    }
+    .belifs>div{
+        margin-bottom: 3rem;
+        font-size: 1.8rem;
+        max-width: 100%;
+    }
+}
+.mission{
+    background-color: white;
+    color: var(--colorTostado);
+    text-align: center;
+    font-family: var(--tipografíaLogo);
+    color: var(--colorRojo);
+    padding: 4rem 0;
+    margin: 0;
+}
+.mission p{
+    font-family: var(--tipografíaBody);
+    margin: 2rem;
+}
+.beating-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.beating-text {
+    font-size: 3.3rem;
+    font-weight: bold;
+    font-family: var(--tipografíaLogo);
+    display: inline-block;
+    transform-origin: center;
+    letter-spacing: 0.2rem;
+    margin: 2rem;
+  }
+
+
+/* SECCION CONTACTO */
+
+.formulario {
+    text-align: center; /* Centra el contenido horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra el contenido verticalmente */
+    height: 70vh; /* Asegura que el contenido ocupe la altura completa de la ventana */
+    color: #C56824;
+}
+
+form {
+    text-align: left; /* Vuelve a alinear el formulario a la izquierda */
+}
+.formulario h4 {
+    background-color: var(--colorRojo);
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: var(--tipografíaLogo);
+    padding: 1rem 4rem;
+    border-radius: 3rem;
+    margin-bottom: 12rem;
+}
+
+/* SECCION WHERE */
+
+.where{
+    background-color: #927A47;
+    font-family: var(--tipografíaLogo);
+    font-size: 4rem;
+    font-family: var(--tipografíaLogo);
+    font-weight: 200;
+    text-align: center;
+    padding-top: 10rem;
+}
+.supermarkets{
+    color:#927A47;
+    text-align: center;
+    display: flex;
+    padding: 2rem;
+}
+
 
 /* FOOTER */
 footer {
     background-color: var(--colorTostado);
+    margin: 0!important;
 }
 .seccionFooter{
     display: flex;
